@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
+
   <meta charset="UTF-8">
-  <title>テスト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  @media (max-width: 600px) {
+
+    .slider {
+      width: 90%;
+      height: auto;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+</style>
+  <title>うちの子が一番！</title>
+
+  <style>
+    body {
+      color: #5c4033;
+    }
+
+    img {
+      border-radius: 20px;
+    }
+
+    h1, h2 {
+      color: #8b5e3c;
+    }
+
+  </style>
+
 </head>
-<body>
-  <h1>表示できた！</h1>
+
+<body style="font-family: sans-serif; text-align: center;">
+
+  <h1>🐶 うちの子が一番！</h1>
+
+<div class="card">
+  <img src="dog.jpg" width="300">
+  <p>世界一かわいい！</p>
+</div>
+
+  <img src="DS6_8650.jpg" alt="うちの犬" width="300">
+
+  <p>世界で一番かわいい、うちの犬を紹介します！</p>
+
+<h2>ギャラリー</h2>
+
+<div class="slider">
+  <div class="slides">
+    <img src="DS6_8590.jpg">
+    <img src="DS6_8641.jpg">
+    <img src="DS6_8481.jpg">
+  </div>
+
+
+<style>
+  .slider {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .slides {
+    display: flex;
+    width: 300px;
+    height: 400;
+    object-fit: cover;
+    animation: slide 15s infinite;
+  }
+
+  .slides img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-300px); }
+    66% { transform: translateX(-600px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+
+
+  <h2>プロフィール</h2>
+  <p>名前：れもん</p>
+  <p>年齢：🌈14歳</p>
+  <p>好きなもの</p>
+  <p>サツマイモチュロス,散歩</p>
+
+  <h2>れもんの一言</h2>
+ <p class="speech">桜はいいから食べ物くれ</p>
+<style>
+  .speech {
+    display: inline-block;
+    background: #fffaf3;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #d2b48c;
+  }
+</style>
 </body>
 </html>
